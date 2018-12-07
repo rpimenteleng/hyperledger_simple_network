@@ -1,7 +1,8 @@
 # Copyright IBM Corp. All Rights Reserved.
 #
 # SPDX-License-Identifier: Apache-2.0
-# Change(Branch: Test)
+#
+
 # ---------------------------------------------------------------------------
 # "OrdererOrgs" - Definition of organizations managing orderer nodes
 # ---------------------------------------------------------------------------
@@ -9,7 +10,7 @@ OrdererOrgs:
   # ---------------------------------------------------------------------------
   # Orderer
   # ---------------------------------------------------------------------------
-  - Name: Orderer_Organization
+  - Name: Orderer
     Domain: example.com
     # ---------------------------------------------------------------------------
     # "Specs" - See PeerOrgs below for complete description
@@ -23,7 +24,7 @@ PeerOrgs:
   # ---------------------------------------------------------------------------
   # Org1
   # ---------------------------------------------------------------------------
-  - Name: Organization_1
+  - Name: Org1
     Domain: org1.example.com
     EnableNodeOUs: true
     # ---------------------------------------------------------------------------
@@ -69,11 +70,11 @@ PeerOrgs:
     # Count: The number of user accounts _in addition_ to Admin
     # ---------------------------------------------------------------------------
     Users:
-      Count: 2
+      Count: 1
   # ---------------------------------------------------------------------------
   # Org2: See "Org1" for full specification
   # ---------------------------------------------------------------------------
-  - Name: Organization_2
+  - Name: Org2
     Domain: org2.example.com
     EnableNodeOUs: true
     Template:
